@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="Controls1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Controls1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock Text="Hello, World" Style="{StaticResource HeaderTextBlockStyle}"/>
+    </Grid>
+    <!--<Canvas Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock Text="Hello"/>
+        <Ellipse Fill="Red"
+                 Height="100"
+                 Canvas.Left="205"
+                 Stroke="Black"
+                 Canvas.Top="111"
+                 Width="100" 
+                 Canvas.ZIndex="1"/>
+        <Rectangle Fill="Blue"
+                   Height="188"
+                   Canvas.Left="82"
+                   Stroke="Black"
+                   Canvas.Top="40"
+                   Width="118" />
+        <Rectangle Fill="Blue"
+                   Height="137"
+                   Canvas.Left="278"
+                   Stroke="Black"
+                   Canvas.Top="91"
+                   Width="140"
+                   Canvas.ZIndex="0"/>
+    </Canvas>-->
+</Page>

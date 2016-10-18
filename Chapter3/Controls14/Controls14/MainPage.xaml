@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="Controls14.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Controls14"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="0" Content="This is a button to launch a flyout">
+            <Button.Flyout>
+                <Flyout>
+                    <StackPanel>
+                        <TextBlock>This is a flyout message</TextBlock>
+                        <Button>This is a flyout button</Button>
+                    </StackPanel>
+                </Flyout>
+            </Button.Flyout>
+        </Button>
+        <Button Grid.Column="1" Content="This is a button to launch Menu Flyout">
+            <Button.Flyout>
+                <MenuFlyout>
+                    <MenuFlyoutItem Text="First Item"/>
+                    <MenuFlyoutSeparator/>
+                    <ToggleMenuFlyoutItem Text="Toggle Item"/>
+                </MenuFlyout>
+            </Button.Flyout>
+        </Button>
+    </Grid>
+</Page>

@@ -1,0 +1,49 @@
+﻿<Page
+    x:Class="Controls7.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Controls7"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Name="OuterPanel" Margin="50">
+            <StackPanel Orientation="Horizontal"
+                        Name="RadioButtonsPanel">
+                <RadioButton Name="Soft"
+                             Content="Soft"
+                             GroupName="Loudness"
+                             Margin="5" />
+                <RadioButton Name="Medium"
+                             Content="Medium"
+                             GroupName="Loudness"
+                             Margin="5" />
+                <RadioButton Name="Loud"
+                             Content="Loud"
+                             IsChecked="True"
+                             GroupName="Loudness"
+                             Margin="5" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                        Name="CheckBoxPanel">
+                <CheckBox Name="ClassicRock"
+                          Content="Classic Rock"
+                          Margin="5" />
+                <CheckBox Name="ProgRock"
+                          Content="Progressive Rock"
+                          Margin="5" />
+                <CheckBox Name="IndieRock"
+                          Content="Indie Rock"
+                          Margin="5" />
+            </StackPanel>
+            <ToggleSwitch Header="Power"
+                          OnContent="On"
+                          OffContent="Off" />
+            <ToggleButton Content="Toggle me!" Checked="ToggleButton_Checked" Unchecked="ToggleButton_Unchecked"/>
+            <TextBlock Name="Message"
+                       Text="Ready..."
+                       FontSize="40" />
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="Controls5.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Controls5"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBox x:Name="FirstName"
+                 Header="First Name"
+                 PlaceholderText="[Enter First Name]"
+                 Width="200"
+                 Grid.Row="0"
+                 HorizontalAlignment="Left"
+                 Margin="5"
+                 VerticalAlignment="Center" />
+        <TextBox x:Name="LastName"
+                 Header="Last Name"
+                 PlaceholderText="[Enter Last Name]"
+                 Width="200"
+                 Grid.Row="1"
+                 HorizontalAlignment="Left"
+                 Margin="5"
+                 VerticalAlignment="Center" />
+        <TextBox x:Name="JobTitle"
+                 Header="Job Title"
+                 PlaceholderText="[Enter Job Title]"
+                 IsSpellCheckEnabled="True"
+                 IsTextPredictionEnabled="True"
+                 Width="200"
+                 Grid.Row="2"
+                 HorizontalAlignment="Left"
+                 Margin="5"
+                 VerticalAlignment="Center" />
+    </Grid>
+</Page>
